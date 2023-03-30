@@ -1,0 +1,53 @@
+@use "../abstracts/" as *;
+
+.form-pesquisar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 380px;
+    
+    @media (max-width: 992px) {
+        width: 260px;
+        margin-left: 0;
+    }
+    
+    &__campo {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border: none;
+        padding: 10px 55px;
+        color: #707070;
+
+        @media (max-width: 992px) {
+            direction: ltr;
+        }
+        
+        &:focus {
+            color: #707070;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        }
+        
+        &::placeholder {
+            color: #9a9a9a;
+        }
+    }
+
+    &__right-search-icon {
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        color: #707070;
+        font-size: 15px;
+        
+        @media (max-width: 767px) {
+            left: 20px;
+        }
+    }
+
+    &__left-search-icon {
+        position: absolute;
+        color: #707070;
+        margin-right: 4px; 
+        font-size: 17px;
+        left: 17px;
+    }
+}

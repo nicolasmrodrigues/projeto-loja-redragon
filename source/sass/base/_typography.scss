@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+$fontePrincipal: Roboto, sans-serif;
+$fonteSecundaria: Poppins, sans-serif;
+
+body {
+    font-family: $fontePrincipal;
+}
+
+.title {
+    font-family: $fonteSecundaria;
+}
+
+.title--vermelho {
+    color: $corSecundaria;
+}
+
+.product-description {
+    color: #545454;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.product-title {
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}

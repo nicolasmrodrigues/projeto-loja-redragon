@@ -1,0 +1,74 @@
+@use '../abstracts' as *;
+
+.btn {
+    color: $corTerciaria;
+    background-color: $corPrincipal;
+    
+    &:hover {
+        color: $corTerciaria;
+        background-color: lighten($corPrincipal, 10%);
+    }
+}
+
+.card-do-produto {
+    &:hover {
+        .card-do-produto__botao {
+            transition: all 400ms;
+            transform: translateY(40px);
+            opacity: 1;
+        }
+    }
+
+    &__botao {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        top: 73%;
+        left: 8%;
+        right: 8%;
+        opacity: 0;
+        background-color: $corSecundaria;
+        border: none;
+        padding: 14px 0;
+        border-radius: 6px;
+        color: $corTerciaria;
+        font-size: 18px;
+        margin: 0 auto;
+        
+        &:hover {
+            background-color: lighten(#E00E31, 8%);
+        }
+        
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.menu-toggler {
+    margin-right: 0;
+    background-color:$corTerciaria;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+
+.form-pesquisar {
+    &__botao {
+        display: none;
+        position: absolute;
+        top: 12px;
+        left: 335px;
+        background-color: $corPrincipal ;
+        border: none;
+        border-radius: 6px;
+        padding: 18px 20px;
+    }
+
+    &__right-search-icon {
+        position: relative;
+        top: 0;
+        left: 2px;
+    }
+}

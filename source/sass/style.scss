@@ -1,0 +1,50 @@
+
+@use 'abstracts' as *;
+@use  'base' as *;
+@use 'components' as *;
+@use 'layouts' as *;
+
+@mixin tamanho-do-card {
+    display: block;
+    height: 387px;
+
+    @media (max-width: 767px) {
+        height: 275px;
+    }
+    
+    @media (min-width: 768px) and (max-width: 992px) {
+        height: 420px;
+    }
+}
+
+body {
+    padding-top: 130px;
+
+    @media (max-width: 992px) {
+        padding-top: 60px;
+    }
+}
+
+#destaques {
+    background-image: url('../images/background-image.webp');
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-do-produto__link {
+    @include tamanho-do-card();
+}
+
+.card-do-produto {
+    @include tamanho-do-card();
+
+    position: relative;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+    background-color: rgb(240, 240, 240);
+
+    p {
+        margin: 0;
+    }
+}
