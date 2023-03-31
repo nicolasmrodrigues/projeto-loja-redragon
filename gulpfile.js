@@ -33,10 +33,5 @@ function minificaJS() {
     .pipe(gulp.dest('build/javascript/'));
 }
 
-function moveBootstrap() {
-    return gulp.src('source/assets/**')
-    .pipe(gulp.dest('build/assets'))
-}
 
-
-exports.build = gulp.series(compilaSass, comprimeImagens, minificaHTML, minificaJS, moveBootstrap);
+exports.build = gulp.series(compilaSass, comprimeImagens, minificaHTML, minificaJS);

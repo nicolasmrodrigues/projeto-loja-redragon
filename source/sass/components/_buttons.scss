@@ -54,21 +54,13 @@
 }
 
 
-.form-pesquisar {
-    &__botao {
-        display: none;
-        position: absolute;
-        top: 12px;
-        left: 335px;
-        background-color: $corPrincipal ;
-        border: none;
-        border-radius: 6px;
-        padding: 18px 20px;
-    }
-
-    &__right-search-icon {
-        position: relative;
-        top: 0;
-        left: 2px;
-    }
+.form-pesquisar__botao {
+    display: none;
+    position: absolute;
+    top: 12px;
+    left: 335px;
+    background-color: $corPrincipal ;
+    border: none;
+    border-radius: 6px;
+    padding: 18px 20px;
 }

@@ -1,5 +1,23 @@
 @use '../abstracts' as *;
 
+@font-face {
+    font-family: Roboto;
+    src: url(../../../assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../../assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../../../assets/fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
 $fontePrincipal: Roboto, sans-serif;
 $fonteSecundaria: Poppins, sans-serif;
 
